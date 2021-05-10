@@ -19,4 +19,4 @@ def sex():
 			rez = 'serverele <a href="http://random.org/">random.org</a> sunt ocupate acum, inceacra mai tarziu geiul;e'
 	return render_template("index.html", rz = rez, inpt = freqs.form["nume"], unescape = html.unescape)
 
-app.run(host = "0.0.0.0", port = 80, debug=True)
+app.run(port = 5000, threaded = True)
