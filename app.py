@@ -21,4 +21,5 @@ def sex():
 			rez = 'serverele <a href="http://random.org/">random.org</a> sunt ocupate acum, inceacra mai tarziu geiul;e'
 	return render_template("index.html", rz = rez, inpt = b, unescape = html.unescape)
 
-app.run(port=5000)
+if __name__ == '__main__':
+	app.run(port=5000)
