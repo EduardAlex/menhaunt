@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		sterge nume fa
+	</title>
+</head>
+<body>
+<form action="/delete" method="post">
+	{% for i in nume %}
+	<input type="checkbox" name="numealese" value="{{i}}" id="{{i}}"/>
+	<label for="{{i}}">{{i}}</label><br>
+	{% endfor %}
+	<input type="submit" value="sterge numele alese">
+</form>
+<br><a href="/"><button>back to page</button></a>
+</body>
+</html>

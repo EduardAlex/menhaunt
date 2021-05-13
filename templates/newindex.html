@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Gay sex fut senzual 2.0 nume random
+	</title>
+	<style>
+		p, label {
+			font-family: Arial;
+		}
+		.win {
+			color: green;
+			font-weight: bold;
+		} 
+		body {
+			zoom: 300%;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" action="/">
+	{% for i in nume %}
+	<input type="checkbox" name="numealese" value="{{i}}" id="{{i}}" {% if i in numealese %} checked {% endif %}/>
+	<label for="{{i}}" {% if i == win %} class="win" {% endif %}>{{i|safe}}</label><br>
+	{% endfor %}
+	<br>
+	<button type="submit" name="aleg" value="da">Genereaza</button>
+	<button type="submit" name="aleg" value="nu">Alege tot</button> {% if noten %} <p> Nu ai ales destule nume, minim 2 geiule </p> {% endif %}
+	</form>
+</body>
+</html>
