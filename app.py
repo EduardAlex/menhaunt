@@ -26,8 +26,10 @@ def sex():
 				print(a)
 			a = int(a)
 			win = numealese[a]
-		elif freqs.form["aleg"] == "nu":
+		elif freqs.form["aleg"] == "st":
 			numealese = nume
+		elif freqs.form["aleg"] == "dt":
+			numealese = []
 	return render_template("newindex.html", nume = nume, unescape = html.unescape, numealese = numealese, noten = False, win = win)
 
 @app.route("/add", methods=["GET", "POST"])
