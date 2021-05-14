@@ -8,7 +8,7 @@ import html
 app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
-def sex():
+def main():
 	with open("nume.txt", "r") as f:
 		nume = sorted(f.read().split(";"))
 	win = None
